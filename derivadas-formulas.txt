@@ -1,0 +1,7 @@
+x**n = c nx**n-1
+
+u*v = udv + vdu
+
+u/v = vdu - udv/v**2
+
+v**n = c nv**n-1 dv

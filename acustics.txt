@@ -1,0 +1,39 @@
+# Acustica:
+
+La ciencia que estudia la transmisión de energia por ondas.
+
+### FORMULA DE ARMONICOS
+
+LA GENERACION DE ARMONICOS NATURALES ES UNA PROPIEDAD INHERENTE DE LOS OBJETOS VIBRATORIOS Y SIGUE UNA SECUENCIA DETERMINISTA LA CUAL ES UNA PROPIEDAD NATURAL UNIVERSAL.
+
+#### Fourier:
+
+Los sonidos compuestos por armónicos mezclan en una sola onda varias notas o frecuencias matematicamente relacionadas con la frecuencia mas baja la fundamental.
+							
+**Transductor:** es un dispositivo que recibe una **forma de energia y la convierte en otra** siguiendo la ley universal de la conservacion de energia. Ley de HELMHOLTZ. 
+
+**Principio universal de conservasion de la energia**:  *La energia no se crea ni se destruye, solo se trasduce.*
+									
+
+**Tarea buscar :**
+
+- [ ] Secuencia de harmónicos Pitágoras
+- [ ] Tabla de notas y frecuencias.
+- [ ] Definicion espacio y tiempo de Einstein
+- [ ] Determinar velocidad sonido entregar un texto pequeño
+
+#### Ruido:
+
+La diferencia entre el sonido y el ruido:
+
+1. El sonido puedes cantar una fundamental.
+2. El ruido dificulta o deteriora la claridad en la información.
+
+
+​																																									
+​																																	
+​																																	
+​																								
+​											
+​											
+​	

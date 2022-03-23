@@ -1,0 +1,197 @@
+   _____                                    
+  / ____|                                   
+ | |  __ _ __ ___  ___ ___  __ _ _ __ _   _ 
+ | | |_ | '__/ _ \/ __/ __|/ _` | '__| | | |
+ | |__| | | | (_) \__ \__ \ (_| | |  | |_| |
+  \_____|_|  \___/|___/___/\__,_|_|   \__, |
+     notes from Coursera               __/ |
+     MIT MACHINE LEARNING COURSE       |___/ 
+	 
+	 
+What is Machine Learning?
+Arthur Samuel described it as: the field of study that gives computers the ability to learn without being explicitly programmed.
+
+Tom Mitchell provides a more modern definition: "A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E."
+
+
+E = the experience
+
+T = the task 
+
+P = the probability
+
+In general, any machine learning problem can be assigned to one of two broad classifications:
+
+Supervised learning and Unsupervised learning.
+
+
+/===================================================================================================================\=============================================Supervised-Learning=====================================================\===================================================================================================================/
+
+
+  _      _                         _____                              _               
+ | |    (_)                       |  __ \                            (_)            _ 
+ | |     _ _ __   ___  __ _ _ __  | |__) |___  __ _ _ __ ___  ___ ___ _  ___  _ __ (_)
+ | |    | | '_ \ / _ \/ _` | '__| |  _  // _ \/ _` | '__/ _ \/ __/ __| |/ _ \| '_ \   
+ | |____| | | | |  __/ (_| | |    | | \ \  __/ (_| | | |  __/\__ \__ \ | (_) | | | |_ 
+ |______|_|_| |_|\___|\__,_|_|    |_|  \_\___|\__, |_|  \___||___/___/_|\___/|_| |_(_)
+                                               __/ |                                  
+                                              |___/                                   
+When the target variable that we’re trying to predict is continuous, we call the learning problem a regression problem.
+
+So what the machine actually learns from this method?
+In simple terms, the model learns a function f such that f(x) maps to y.
+X will tell me Y.
+Take X predict Y.
+
+Y -> is the target or the dependable variable.
+All this means is that, we are going to predict that y is a linear function of x.
+The objective of linear regression is to minimize the cost function.
+
+		--------------------------------------------
+		|										    |
+		|	x = input variables/ features			|
+		|	y = output variables					|
+		|	m = the number of training examples.	|
+		|	(x, y) : a training example.			|
+		|	i = row number in a training example.	|
+		|											|
+		--------------------------------------------
+Hypothesis:
+hθ(x) = θ0 + θ1x
+
+θ = parameters.
+To best fit our data we have to choose the value of theta’s such that the difference between h(x) and y is minimum
+
+COST FUNCTION:
+*** How to fit the best possible straight line to our data.
+*** We can measure the accuracy of our hypothesis function by using a cost function.
+
+theta zero and theta one, they stabilize the parameters of the model.
+
+* Error function is defined by the difference between h(x) — y.
+* We are taking absolute error as square of the error because some points are above and below the line.
+* To take the error of all points we used Summation.
+* Averaged and then divided by 2 to make the calculation easier. It will have no effect on overall error.
+
+On octave:
+
+//takes an average difference of all the results of the hypothesis with inputs from x's and the actual output y's.
+	
+	costs = (X * theta - y) .^ 2;
+	J = sum(costs) / (2 * m);
+	
+	
+	Idea: Choose θ0, θ1 so that hθ(x) is close to y for our training examples (x,y).
+	
+--------------------------
+	
+GRADIENT DESCENT:
+
+alpha = learning rate which describes how big the step you take
+
+Derivative gives you the slope of the line tangent to the ‘theta’ which can be either positive or negative and derivative tells us that we will increase or decrease the ‘theta’
+Simultaneous update means that both theta should be updated simultaneously.
+
+   ___ _      _   ___ ___ ___ ___ ___ ___   _ _____ ___ ___  _  _ 
+  / __| |    /_\ / __/ __|_ _| __|_ _/ __| /_\_   _|_ _/ _ \| \| |
+ | (__| |__ / _ \\__ \__ \| || _| | | (__ / _ \| |  | | (_) | .` |
+  \___|____/_/ \_\___/___/___|_| |___\___/_/ \_\_| |___\___/|_|\_|
+                                                                  
+
+The variable - y - that you want to predict is valued.
+Develop an algorithm called logistic regression, which has the property that the output, the predictions of logistic regression are always between zero and one, and doesn't become bigger than one or become less than zero.
+
+Decision Boundary
+
+In order to get our discrete 0 or 1 classification, 
+we can translate the output of the hypothesis function as follows:
+
+hθ(x)≥0.5→y=1
+hθ(x)<0.5→y=0
+
+------------------------------
+Logistic Regression -> for classification problems
+
+-----------------------------
+Cost Function
+
+We cannot use the same cost function that we use for linear regression because the Logistic Function will cause the output to be wavy, causing many local optima. In other words, it will not be a convex function.
+
+Instead, our cost function for logistic regression looks like:
+
+J(θ)=1m∑i=1mCost(hθ(x(i)),y(i))Cost(hθ(x),y)=−log(hθ(x))Cost(hθ(x),y)=−log(1−hθ(x))if y = 1if y = 0
+
+----------------------------
+
+╔═╗┌─┐┌─┐┬  ┬┌─┐┌─┐┌┬┐┬┌─┐┌┐┌┌─┐
+╠═╣├─┘├─┘│  ││  ├─┤ │ ││ ││││└─┐
+╩ ╩┴  ┴  ┴─┘┴└─┘┴ ┴ ┴ ┴└─┘┘└┘└─┘:
+
+Outlier Detection:
+
+The aim this time is to find instances that do not obey the general rule - those are the exceptions that are informative in certain contexts.
+The idea is that typical instances share characteristics that can be simply stated, and instances that do not have them are atypical.
+
+"All happy families resemble one another, but each unhappy family is unhappy in its own way."
+
+In such case, the model covers the typical instances and then any instance that falls outside is an exception.
+An outlier is an instance that is very different from other instances in the sample.
+An outlier may indicate an abnormal behaviour of the system.
+
+Dimensionality Reduction:
+
+Remove uninformative features.
+Reduce time and space on models.
+Simpler models are more robust on small data sets, they can be trained with fewer data; or when trained with the same amount of data, they have smaller variance (uncertainty).
+
+When data can be explained with fewer features, we have a simpler model that is easier to interpret.
+The ideal feature set best represents the (classification or regression) information in the data set using the fewest numbers, and it is a process of encoding.
+
+Active Learning:
+
+In learning; it is critical that the learner also knows what it knows and what it does not know. When a trained model makes a prediction, it is helpful if it can also indicate its certainty in that prediction.
+
+
+--------------------------------
+Man and his symbols. Carl Jung.
+
+Some generalities are necessary in order to classify and clarify the material that is collected by studying many individuals.
+Any general characteristic can be chosen as a basis.
+
+Axiom 53: A Stable Datum is necessary to the alignment of data.
+
+Extroverted 
+Introverted
+
+Confrontation of two individuals.
+
+Both belong to the same class = affinity
+Different class = contradictions.
+
+- Being aware of their own type of personality.
+- Conviced that their own is the only right type.
+
+Extrovert -> Will choose the mayority view.
+Introvert -> reject it simply because its fashionable.
+
+
+Such a misunderstanding is easy enough because the value of the one is the none value of the other.
+
+The form that dreams take is natural to the unconcious because the material from which they are produced is retained in the subliminal state in precisely this fashion.
+
+Thus, a dream cannot produce definite thought. If it begins to do so, it ceases to be a dream because it crosses the threshold of consciousness.
+
+Dream symbols are for the most part manifestations of a psyche that is beyond the control of the conscious mind.
+
+Freud called "arcahic remnants" - mental forms whose presence  cannot be explained by anything in the individual's own life  and which seems to bbe aborigginal, innate, and inherited shapes of the human mind.
+
+*********NOTE ASIDE (LRH CALLED SOME GLOBAL MENTAL ARTIFICIAL STRUCTURES AS IMPLANTS)********* 
+
+An archetype is a tendency to form such representations of a motif - representations that can vary a great deal in detail without losing its basic pattern.
+
+
+
+
+
+
+
