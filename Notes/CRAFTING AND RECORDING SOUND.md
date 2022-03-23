@@ -19,17 +19,15 @@ Mixing:
 - Decibels.
 - Gain Staging.
 
-Cables:
+Cables: in writings...
 
 # Understanding effect pedals, 
-
-
 
 ##### Their type and flow in the chain.
 
 - **Modulation Type:**
   Definition: Waveform manipulation.
-  Things like chorus, tremolo, univibe, vibrato, phase, flanger.
+  Things like chorus, tremolo, univibe, vibrato, phaser, flanger.
   Modulation itself is not an effect. Rather, it’s the process by which an effect is produced.
   - Before ambient effects (time-altering effects like delay or echo)
   - After distortion and gain-impacting effects
@@ -40,19 +38,19 @@ Cables:
 
 - Delays.
 
-  If reverb is first, the delay will work on the trails left by the reverb.
+  If the reverb is first, the delay will work on the trails left by the reverb.
   Delay first and the reverb is a traditional way and is ok.
   No rules about what goes first.
-  Both ways could sound good and is just experimentation.
+  Both ways could sound good and are just experimentation.
 
 **Output Buffers: **
-Buffers create impedance firewall.
-At the end, output buffer to avoid trouble..
+Buffers create impedance firewalls.
+In the end, output buffer to avoid trouble...
 
 **Impedance-Sensitive Pedals:**
 
 **Dynamic Pedals (Can go after DIST/OD):**
-This are things that rely or adjusts the dynamics of the guitar tone.
+These are things that rely on or adjust the guitar tone's dynamics.
 Compressors, Filters, envelope filters, octave pedals. (Early on the guitar chain). 
 Close to the guitar, they depend on the dynamic of the guitar to trigger what they do.
 Get them early on the chain so they are more responsive to the dynamics on the guitar (After the buffer pedal).
@@ -62,7 +60,7 @@ Overdrive devices = Soft clip.
 distortion devices = Hard Clip.
 
 Order of Distortion does not matter if you are not stacking devices.
-But if you are going to stack, High gain pedals closer to guitar.
+But if you are going to stack, High gain pedals closer to the guitar.
 High gain before low gain pedals when stacking.
 
 **Eq before the Boost.**
@@ -71,7 +69,7 @@ High gain before low gain pedals when stacking.
 Closer to the amp far from the guitar.
 If you use it after other pedals, is going to act like a master volume. 
 Early on the chain could as well adjust the volume from your guitar knob and get the same result so it would be redundant to have it first in the chain.
-If you decide to use it early on the chain it is going to adjust the volume of what goes into the pedals. It could change the saturation of tone going in other pedals (if thats what you are looking for).
+If you decide to use it early on the chain, it will adjust the volume of what goes into the pedals. It could change tone saturation going in other pedals (if that's what you are looking for).
 
 ### Benefits to be gained when using an effects loop:
 
@@ -79,24 +77,24 @@ If you decide to use it early on the chain it is going to adjust the volume of w
 -  There is less likelihood of any signal loss due to an impedance mismatch.
 
 Effects loop does have its negatives as well.
-- Need to run extra cables in order to use it
-- Extra cable length for the loop can actually change your signal.
+- Need to run extra cables to use it
+- Extra cable length for the loop can change your signal.
 
 **What effects should you put in the loop?**
 
 - Modulation
 
-- Time based effects. 
+- Time-based effects. 
 
   Pedals like **chorus, tremolo, delay and reverb** sound better in the effects loop. 
 
-  Boosts, Dirt effects: Distortion, overdrive and compressors work best in front of the amp.
+  Boosts, Dirt effects: Distortion, overdrive, and compressors work best in front of the amp.
 
 
 
 ***Pedal Flow in front of the amp:***
 
-Running all the chain to the front of the amp without going to the effect loop.
+Running all the chains to the front of the amp without going to the effect loop.
 
 ```flow
 st=>start: Guitar
@@ -117,13 +115,13 @@ st->impedenceGroup->inputBuffer->dynamicGroup->distorGroup->eqBoostGroups->modGr
 
 *** Pedal Flow for Effect Loop ***
 
-Run modulation, Time Based and Ambient Pedals through the effect loop.
+Run modulation, Time Based, and Ambient Pedals through the effect loop.
 
-PREAM OUT is equivalent to SEND in some amps.
+PREAMP OUT is equivalent to SEND in some amps.
 
 POWER AMP IN is equivalent to RECEIVE in some amps.
 
-Pream out or Send, goes into the input of the first pedal that will run through the effect loop, then it chain pedals and the output of the last one goes to RECEIVE or Power AMP IN.
+Preamp out or Send, goes into the input of the first pedal that will run through the effect loop, then it chain pedals and the output of the last one goes to RECEIVE or Power AMP IN.
 
 ```sequence
 
@@ -134,23 +132,19 @@ Pedals-->Amp Send/Receive: Output Pedal to Receive
 
 [^Cables]: The greater the distance in cabling, the greater the loss in signal power due to cable resistance. Bring signal back up to acceptable levels when long chains.
 
-
-
 # Mixing:
-
-
 
 ***Decibels***:
 
-Decibel is a logarithmic unit. A logarithm is the power or exponent to which we raise a certain number - or base.
+A decibel is a logarithmic unit. A logarithm is a power or exponent to which we raise a certain number - or base.
 
 An exponential change in power is perceived as a linear change in loudness.
 
-When dealing with sound, the base is always 10 since the decible is, be definition, a base 10 logarithm.
+When dealing with sound, the base is always 10 since the decibel is, by definition, a base 10 logarithm.
 
-There is a distinction between ***loudness, intensity and power.***
+There is a distinction between ***loudness, intensity, and power.***
 
-***Loudness*** is a perception of the strenght of a signal. ***Intensity or power*** are measurable entities. Power is the amount of energy generated or dissipated per unit of time. It is measured in joules per second.
+***Loudness*** is a perception of the strength of a signal. ***Intensity or power*** is measurable entities. Power is the amount of energy generated or dissipated per unit of time. It is measured in joules per second.
 
 ***Power*** is usually given in ***watts.***
 $$
@@ -165,8 +159,6 @@ $$
 $$
 
 > 1 Watt = 1 Joule per second.
-
-
 
 ***Power*** is the amount of work that is being done by something.
 
@@ -183,14 +175,10 @@ $$
 
 > where I = intensity, W = Power (in watts) and S = surface area (in m2)
 
-
-
-
-
 **Gain Staging**
 
 “adjusting the level at each point of amplification to ensure an optimal signal-to-noise ratio, without unwanted distortion”
-Making sure the audio is set to an optimal level for the next processor in the chain in order to minimize noise and distortion
+Make sure the audio is set to an optimal level for the next processor in the chain to minimize noise and distortion
 
 In the analog world, gain staging refers to adjusting the level at each point of amplification to ensure an optimal signal-to-noise ratio, without unusable distortion. 
 
@@ -201,19 +189,6 @@ dBFS means “decibels full scale,” and it describes the highest possible leve
 
 **What is Unity Gain?**
 
-When passing audio through a piece of gear, if the output level is the same as when the device is not in the signal path, “unity gain” has been achieved — input equals output, level-wise. Basically, you put one volt in, you get one volt out, which is said to equal a gain of one or “unity.”
+When passing audio through a piece of gear, if the output level is the same as when the device is not in the signal path, “unity gain” has been achieved — input equals output, level-wise. You put one volt in, you get one volt out, which is said to equal a gain of one or “unity.”
 
 -
-
-
-
-
-
-
-
-
-
-
-
-
-

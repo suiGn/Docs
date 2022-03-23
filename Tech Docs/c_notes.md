@@ -70,9 +70,9 @@ To **change the value type of a variable** there are two types of conversions:
 
 ###### Float Vs Double
 
-A `float` has 6 decimal places vs 15 of a `double` . Therefore a `float` takes up less memory (4 vs 8 bytes). 
+A `float` has 6 decimal places vs 15 of a `double. Therefore a `float` takes up less memory (4 vs 8 bytes). 
 
-A `double` runs faster, you gain speed paying memory usage.
+A `double` runs faster, you gain speed-paying memory usage.
 
 Choose `double`  any time accuracy is important.
 
