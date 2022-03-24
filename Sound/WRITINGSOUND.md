@@ -10,7 +10,6 @@ A beat is represented by a note **quarter**  (A black note).
 
 ![BlackNote](/Users/suign/Desktop/art/mdrnchurch/studio/Notes/blacknote.png)
 
- 
 
 # ***The melody*** 
 
