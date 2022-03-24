@@ -1,3 +1,9 @@
+<!--SuiGn notes on Javascript-->
+
+
+
+
+
 ## isNaN
 
 **Function tries to convert the string into a number and if it fails, it returns `true`.**

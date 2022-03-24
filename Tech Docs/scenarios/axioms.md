@@ -24,7 +24,7 @@ var opinion;
 }
 ```
 
-**Axiom 3:**
+### **Axiom 3:**
 
 Space, energy, objects, form and time are the result of considerations made and/or agreed upon or not by the Static, and are perceived solely because the Static considers that it can perceive them.
 
