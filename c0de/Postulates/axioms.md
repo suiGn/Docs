@@ -104,13 +104,36 @@ return postulate;
 }
 ```
 
-Axiom 7:
+### Axiom 7:
 
 Time is basically a postulate that space and particles will persist.
+
+```js
+var static = 0;
+var space = x + y + z;
+var energy = [particle: x + y + z];
+var objects = particles; //grouped particles; At certain pixel.
+var time = space++ energy++; //Time is a postulate that space and particles will persist.
+
+var perceive = [space: space, 
+  					energy: energy]; 
+
+function static(perceive){
+var considerations = [space: floating, energy: 0, objects: 0, form: 0, time: 0]:;
+var postulates(space, energy,){
+
+}
+]
+var opinion:
+return postulate;
+}
+```
 
 Axiom 8:
 
 The apparency of time is the change of position of particles in space.
+
+
 
 Axiom 9:
 

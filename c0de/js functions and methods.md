@@ -29,10 +29,8 @@ function isNumber(char) {
 Parse String to Integer
 
 ```javascript
-var x = parseInt(stringValueX, 10);
+var x = parseInt(stringValueX, 10);  
 ```
-
-
 
 ## JavaScript For Loop
 
