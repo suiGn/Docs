@@ -1,5 +1,4 @@
 # Programming in C
-
 <!-- SuiGn: C Programming and General Syntax -->
 
 **Data Types** when **<u>declaring variables</u>**:
@@ -12,7 +11,6 @@
 | `char`   | stores one character (letter or number) | a single character              |
 
 The basic format is:
-
 `printf("string to display", [list of optional parameters])`.
 
 Optional parameters on the string let you add dynamic values to the string:
