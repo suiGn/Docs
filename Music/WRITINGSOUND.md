@@ -11,6 +11,14 @@ A beat is represented by a note **quarter**  (A black note).
 ![BlackNote](/Users/suign/Desktop/art/mdrnchurch/studio/Notes/blacknote.png)
 
 
+
+Time signature (meter signature): Specifies how many beats (pulses) are contained in each bar, and which note value is equivalent to a beat.
+
+In music a meter is the recurring pattern of time. Meter is not always present in sound in the composition but it is expected to be followed by both the listener and the player.
+
+
+
+
 # ***The melody*** 
 
 It is the musical element that organizes 

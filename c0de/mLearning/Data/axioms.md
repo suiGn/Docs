@@ -42,6 +42,8 @@ return outcome;
 
 Space is a **viewpoint of dimension.**
 
+What does multiplying by the identity matrix look like? The easiest example is to multiply a single point by the identity matrix. Since a 3D point only needs three values (x, y, and z), and the transformation matrix is a 4x4 value matrix, we need to add a fourth dimension to the point. By convention, this dimension is called the **perspective**, and is represented by the letter w. For a typical position, setting w to 1 will make the math work out.
+
 ```js
 var static = 0;
 var space = x + y + z;
@@ -55,6 +57,8 @@ var postulates:
 var opinion:
 return postulate;
 }
+
+//VIEW POINT OF DIMENSION == FOR OR WHILE LOOPS
 ```
 
 #### Axiom 5:
